@@ -243,3 +243,19 @@ body.intro-lock{overflow:hidden}
 @media(max-width:980px){.gallery-grid--compact{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:640px){.gallery-grid--compact{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:420px){.gallery-grid--compact{grid-template-columns:1fr}}
+
+
+/* ===== WHAT I BRING / REVIEW-STYLE PRINCIPLES ===== */
+.value-strip{margin-top:clamp(2rem,4vw,3.5rem);padding-top:1.6rem;border-top:1px solid var(--border)}
+.value-strip-head{display:flex;align-items:baseline;justify-content:space-between;gap:1.5rem;margin-bottom:1.25rem}
+.value-strip-head>span{font:700 1.15rem/1 var(--font-display);letter-spacing:-.02em;color:var(--text)}
+.value-strip-head p{margin:0;color:var(--text-muted);font-size:.92rem}
+.value-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.value-card{position:relative;background:var(--panel);border:1px solid var(--border);border-radius:var(--r-md);padding:1.35rem 1.4rem 1.45rem;min-height:180px;transition:transform .22s var(--ease),box-shadow .22s var(--ease),border-color .22s var(--ease)}
+.value-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-soft);border-color:var(--border-strong)}
+.value-mark{display:inline-flex;align-items:center;justify-content:center;width:2.2rem;height:2.2rem;border-radius:50%;background:var(--chartreuse);color:var(--ink);font:700 .72rem var(--font-mono);margin-bottom:1.1rem}
+.value-card:nth-child(2) .value-mark{background:var(--lilac)}
+.value-card:nth-child(3) .value-mark{background:var(--coral)}
+.value-card h3{font-size:1.08rem;margin:0 0 .65rem;color:var(--text)}
+.value-card p{margin:0;color:var(--text-muted);font-size:.93rem;line-height:1.65}
+@media(max-width:880px){.value-cards{grid-template-columns:1fr}.value-strip-head{align-items:flex-start;flex-direction:column;gap:.45rem}.value-card{min-height:0}}
